@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LiberationMono-BoldItalic.ttf">
+            <string>LiberationMono-BoldItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeSlide" customModule="GiveJoy" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FeA-vD-Io1" customClass="WelcomeSlide" customModule="GiveJoy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event_1" translatesAutoresizingMaskIntoConstraints="NO" id="Vmu-Ep-gVJ" userLabel="ImageView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="579.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Vmu-Ep-gVJ" secondAttribute="height" multiplier="1:1.4" id="Gg7-tF-inP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-PW-JVG">
+                    <rect key="frame" x="22" y="648.5" width="370" height="0.0"/>
+                    <fontDescription key="fontDescription" name="LiberationMono-BoldItalic" family="Liberation Mono" pointSize="32"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsV-yj-r2f">
+                    <rect key="frame" x="22" y="668.5" width="370" height="0.0"/>
+                    <attributedString key="attributedText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rgc-PW-JVG" firstAttribute="leading" secondItem="VDw-V6-1EI" secondAttribute="leading" constant="22" id="22K-IV-Yhs"/>
+                <constraint firstItem="YsV-yj-r2f" firstAttribute="centerX" secondItem="rgc-PW-JVG" secondAttribute="centerX" id="3Sm-wg-eGu"/>
+                <constraint firstItem="YsV-yj-r2f" firstAttribute="top" secondItem="rgc-PW-JVG" secondAttribute="bottom" constant="20" id="HMg-fQ-zsA"/>
+                <constraint firstItem="Vmu-Ep-gVJ" firstAttribute="width" secondItem="FeA-vD-Io1" secondAttribute="width" id="S5t-kl-HWw"/>
+                <constraint firstItem="Vmu-Ep-gVJ" firstAttribute="top" secondItem="VDw-V6-1EI" secondAttribute="top" id="cVQ-Ea-0Lk"/>
+                <constraint firstItem="YsV-yj-r2f" firstAttribute="width" secondItem="rgc-PW-JVG" secondAttribute="width" id="fvv-g6-qeZ"/>
+                <constraint firstItem="Vmu-Ep-gVJ" firstAttribute="centerX" secondItem="VDw-V6-1EI" secondAttribute="centerX" id="nmk-Av-gn8"/>
+                <constraint firstItem="rgc-PW-JVG" firstAttribute="top" secondItem="Vmu-Ep-gVJ" secondAttribute="bottom" constant="25" id="vix-bI-IRg"/>
+                <constraint firstItem="rgc-PW-JVG" firstAttribute="centerX" secondItem="Vmu-Ep-gVJ" secondAttribute="centerX" id="xdu-L1-1i5"/>
+                <constraint firstItem="VDw-V6-1EI" firstAttribute="trailing" secondItem="rgc-PW-JVG" secondAttribute="trailing" constant="22" id="zOl-sg-CRm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VDw-V6-1EI"/>
+            <connections>
+                <outlet property="imageView" destination="Vmu-Ep-gVJ" id="TdY-Pk-og0"/>
+                <outlet property="labelDesc" destination="YsV-yj-r2f" id="Lzs-sb-YeU"/>
+                <outlet property="labelTitle" destination="rgc-PW-JVG" id="kPs-ia-vHM"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="event_1" width="256" height="256"/>
+    </resources>
+</document>

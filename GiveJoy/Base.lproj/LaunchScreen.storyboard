@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D9i-js-irP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dzR-nB-jlY">
+            <objects>
+                <viewController id="D9i-js-irP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXq-7Z-aat">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="launchScreenIcon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4VG-hI-E4y">
+                                <rect key="frame" x="141" y="243" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="XW0-cG-Kzp"/>
+                                    <constraint firstAttribute="height" constant="150" id="YZM-Jb-JTx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dN-n4-7SH">
+                                <rect key="frame" x="58" y="442" width="298" height="143"/>
+                                <string key="text">Welcome to
+GiveJoy</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19215686274509802" green="0.082352941176470587" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9dN-n4-7SH" firstAttribute="centerX" secondItem="lXq-7Z-aat" secondAttribute="centerX" id="M3K-01-nOv"/>
+                            <constraint firstItem="4VG-hI-E4y" firstAttribute="centerX" secondItem="lXq-7Z-aat" secondAttribute="centerX" constant="9" id="ipm-hu-HXb"/>
+                            <constraint firstItem="9dN-n4-7SH" firstAttribute="top" secondItem="4VG-hI-E4y" secondAttribute="bottom" constant="49" id="kv1-bX-p2h"/>
+                            <constraint firstItem="4VG-hI-E4y" firstAttribute="centerY" secondItem="lXq-7Z-aat" secondAttribute="centerY" constant="-130" id="nPn-af-Xiw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hYe-Cl-eyu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vE-z9-gCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-660"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchScreenIcon" width="237" height="233.5"/>
+    </resources>
+</document>
